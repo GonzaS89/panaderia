@@ -1,0 +1,155 @@
+.container-nosotros {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  && h1 {
+    font-size: 45px;
+    font-family: Montserrat, sans-serif;
+  }
+
+}
+
+.aptitudes-nosotros {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 50px;
+  margin-top: 30px;
+}
+
+@media (max-width: 400px) {
+  .aptitudes-nosotros {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.servicio-nosotros {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.img-servicio {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.servicio-texto_titulo {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+}
+
+.servicio-texto_contenido {
+  text-align: left;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.container-panreferencia {
+  background-color: black;
+  height: 600px;
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-panreferencia {
+  width: 50%;
+  background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/9ccfd8184e705bad974787e7/ghgh-min.jpg);
+  background-position: 0 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto-panmuestra {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  font-family: Montserrat, sans serif;
+
+  && h1 {
+    font-size: 50px;
+  }
+
+  && p{
+    line-height:2;
+    margin-top:10px
+  }
+}
+
+.boton {
+  height: 50px;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-radius: 25px;
+  margin-top: 30px;
+}
+
+.botonpanmuestra {
+  background-color: white;
+  &&:hover {
+    background-color: grey;
+    color: white;
+    transition: all 0.5s ease-out;
+  }
+}
+
+@media (max-width: 1200px) {
+  .texto-panmuestra {
+    width: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-panreferencia {
+    flex-direction: column-reverse;
+    height: 800px;
+  }
+  .img-panreferencia {
+    width: 100%;
+    height: 75%;
+    background-position: center center;
+  }
+  .texto-panmuestra {
+    width: 75%;
+    margin: 30px 0 0 30px;
+  }
+
+  .aptitudes-nosotros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+    .container-nosotros{
+       && h1{
+            font-size:30px;
+        }
+    }
+
+    .aptitudes-nosotros {
+        grid-template-columns: 1fr;
+      }
+
+      .texto-panmuestra{
+        && h1{
+            font-size:30px;
+        }
+        && p{
+            font-size:10px;
+
+        }
+      } 
+}
