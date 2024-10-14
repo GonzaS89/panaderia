@@ -40,11 +40,26 @@
     }
 }
 
-@media (max-width:450px){
+@media (max-width: 768px) {
     .container-contacto{
         justify-content:center;
         width: 100%;
     }
+    .footer-infocontacto{
+        width: 50%;
+
+        && h1{
+            font-size:25px;
+        }
+
+        && p{
+            font-size:16px
+        }
+    }
+}
+
+@media (max-width:450px){
+    
     .footer-infocontacto{
         width: 75%;
         height: 350px;
