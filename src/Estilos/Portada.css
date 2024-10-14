@@ -51,7 +51,10 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
+    .container-portada{
+        background-position: center right;
+    }
     .texto-portada{
         gap: 5px;
     }
