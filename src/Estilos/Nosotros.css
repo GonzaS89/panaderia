@@ -1,4 +1,5 @@
 .container-nosotros {
+    background: linear-gradient(180deg, #fff8e3, #ffffff );
   padding: 50px;
   display: flex;
   flex-direction: column;
